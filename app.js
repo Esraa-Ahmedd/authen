@@ -31,6 +31,3 @@ console.log("error happend");
 
 })
 export default app;
-app.get("/",(req,res)=>{
-  res.render("signup")
-})
