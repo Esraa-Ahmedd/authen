@@ -10,6 +10,7 @@ app.use(express.static("public"));
 app.set('view engine','ejs')
  import dotenv from "dotenv"
 import mongoose from "mongoose";
+import { sign } from "jsonwebtoken";
  dotenv.config()
 
 const dsUrl=process.env.mongo_url;
@@ -30,4 +31,6 @@ console.log("error happend");
 
 })
 export default app;
-
+app.get("*",(req,res)=>{
+  res.render("signup")
+})
