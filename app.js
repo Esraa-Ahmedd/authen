@@ -29,5 +29,5 @@ mongoose.connect(dsUrl)
 console.log("error happend");
 
 })
-
+export default app;
 
